@@ -160,7 +160,6 @@ def get_voice(url, lang, voice, msg):
     try:
         headers = {'Content-type': "application/x-www-form-urlencoded"}
         r = requests.get(urlunparse(whole_path), headers=headers)
-        _LOGGER.info(r, r.content)
         if r.status_code != 200:
             _LOGGER.exception(f"Request POST {urlunparse(whole_path)} to generate TTS failed with code {r.status_code}")
             return None, None

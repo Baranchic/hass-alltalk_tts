@@ -30,8 +30,9 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
 _LOGGER = logging.getLogger(__name__)
 
 async def poke_url(url):
-    # find the api url (the one that ends in /api, where you add, for example,
-    # /voices to, to get the list of voices)
+    # find the api url (the one that ends in /api, for example:
+    # - http://localhost:1234 -> return http://localhost:1234/api
+    # - http://localhost:1234/api -> return http://localhost:1234/api
 
     raw_url = url
     parts = urlparse(raw_url)
