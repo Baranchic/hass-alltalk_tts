@@ -1,0 +1,20 @@
+{
+  "config": {
+    "step": {
+      "voice": {
+        "data": {
+          "language": "Language",
+          "voice": "Voice"
+        }
+      }
+      "user": {
+        "data": {
+            "url": "alltalk_tts API URL"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_service%]"
+    }
+  }
+}

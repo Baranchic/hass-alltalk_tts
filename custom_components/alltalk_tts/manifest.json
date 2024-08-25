@@ -1,0 +1,11 @@
+{
+  "domain": "alltalk_tts",
+  "name": "alltalk_tts",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/richardsamuels/hass-alltalk_tts",
+  "iot_class": "calculated",
+  "loggers": [""],
+  "requirements": [],
+  "version": "0.0.1"
+}
