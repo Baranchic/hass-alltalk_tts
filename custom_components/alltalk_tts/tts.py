@@ -95,6 +95,8 @@ class AlltalkTTSEntity(TextToSpeechEntity):
             voice = options[CONF_VOICE]
         if "lang" in options:
             language = options["lang"]
+        if language == 'sk':
+            language = 'cs'                
 
         _LOGGER.info(f"Request TTS LANG: {language} | VOICE: {voice} | OPTS: {options} | msg: {message}")
         return get_voice(self._url, self._lang, self._voice, message);
@@ -137,6 +139,8 @@ class AlltalkTTSProvider(Provider):
             voice = options[CONF_VOICE]
         if "lang" in options:
             language = options["lang"]
+        if language == 'sk':
+            language = 'cs'    
 
         _LOGGER.info(f"Request TTS LANG: {language} | VOICE: {voice} | OPTS: {options} | msg: {message}")
         return get_voice(self._url, language, voice, message);
