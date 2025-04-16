@@ -7,6 +7,7 @@ DEFAULT_LANG = "en"
 
 
 LANGS = [
+"sk",  
 "ar",
 "zh-cn",
 "cs",
